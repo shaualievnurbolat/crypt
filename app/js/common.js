@@ -1,8 +1,8 @@
 
-const items = document.querySelectorAll('.questions__item')
+const list = document.querySelectorAll('.questions__item')
 
-items.forEach(item => {
-	item.addEventListener('click', function() {
-		alert('hello world')
-	})
+list.forEach(item => {
+    item.addEventListener('click', function() {
+        item.lastElementChild.classList.toggle('questions__item_show')
+    })
 })
